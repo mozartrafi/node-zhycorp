@@ -2,17 +2,17 @@
 import { get } from "superagent";
 import { getOwner } from "./api/Bot";
 import ZhycorpError from "./util/ZhycorpError";
-import type { Bot } from "./interfaces";
+import { Bot } from "./interfaces";
 
 export class ZhycorpWrapper {
-    private readonly baseURL = "https://bot.zhycorp.xyz";
+    private readonly baseURL = "https://bot.zhycorp.com";
     public async getBot(id: string): Promise<Bot> {
         const USER_PATTERN = /\d{17,19}/g;
         if (!USER_PATTERN.test(id)) throw Error("Invalid user id");
 
         const { body: result } = await get(this.baseURL);
-        if (!result[id]) throw new ZhycorpError("Not Found");
-        const bot = result[id];
+        if (!result.find((b: Bot) => b.botID === id)) throw new ZhycorpError("Not Found");
+        const bot = result.find((b: Bot) => b.botID === id);
         const user = await getOwner(id);
         return {
             approved: bot.approved,

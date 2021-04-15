@@ -2,6 +2,51 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.5.5](https://github.com/zhycorp/node-zhycorp/compare/v1.5.0...v1.5.5) (2020-02-19)
+
+### Fixes
+- **eslint:** Remove unnecessary dev dependencies, including [@hazmi35/eslint-config](https://www.npmjs.com/package/@hazmi35/eslint-config) since we have our own one
+
+### Features
+- **API:** Domain migration ~~zhycorp.xyz~~ > [zhycorp.com](https://zhycorp.com), New baseURL ([https://bot.zhycorp.com](https://bot.zhycorp.com))
+
+### [1.5.0](https://github.com/zhycorp/node-zhycorp/compare/v1.2.1...v1.5.0) (2020-12-23)
+
+### [1.2.1](https://github.com/zhycorp/node-zhycorp/compare/v1.2.0...v1.2.1) (2020-12-23)
+
+
+### Bug Fixes
+
+* **API:** Use Array#find since its array not an object ([#104](https://github.com/zhycorp/node-zhycorp/issues/104)) ([f2157a3](https://github.com/zhycorp/node-zhycorp/commit/f2157a37569d48084704a1779ae3e82cd9ce9309))
+
+### [1.0.5](https://github.com/zhycorp/node-zhycorp/compare/v1.0.4...v1.0.5) (2020-11-07)
+
+### [1.0.4](https://github.com/zhycorp/node-zhycorp/compare/v1.0.3...v1.0.4) (2020-11-07)
+
+
+### Bug Fixes
+
+* remove dist ([5966a10](https://github.com/zhycorp/node-zhycorp/commit/5966a10025464591bcc7bb39020d76a3a2143cb1))
+
+### [1.0.3](https://github.com/zhycorp/node-zhycorp/compare/v1.0.2...v1.0.3) (2020-10-24)
+
+
+### Bug Fixes
+
+* **ci:** fix changes conflicts ([a1f71b4](https://github.com/zhycorp/node-zhycorp/commit/a1f71b4a3089ec67a46c01ab588b8de8c89a8033))
+* **ci:** Ignore examples folder ([2c485dc](https://github.com/zhycorp/node-zhycorp/commit/2c485dc5e549d12b27cde250efa33b6f372d3c01))
+* **ci:** Ignore examples folder for eslint ([d928a77](https://github.com/zhycorp/node-zhycorp/commit/d928a77614f5d6e82f66a66a7061609f753bc4db))
+
+### [1.0.2](https://github.com/zhycorp/node-zhycorp/compare/v1.0.1...v1.0.2) (2020-09-11)
+
+### [1.0.1](https://github.com/zhycorp/node-zhycorp/compare/v1.0.0...v1.0.1) (2020-09-08)
+
+
+### Bug Fixes
+
+* **typings:** fix getBot method return type is Promise<any> ([3530069](https://github.com/zhycorp/node-zhycorp/commit/35300698d651c71edfda539ba4306e6351ab4126))
+* **typings:** fix wrong types in the Bot interface ([e1a6cfc](https://github.com/zhycorp/node-zhycorp/commit/e1a6cfc450bc6fd15b3c80bf91de1bbd0490e15f))
+
 ## 1.0.0 (2020-09-06)
 
 

@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.getOwner = void 0;
 const superagent_1 = require("superagent");
 const cheerio_1 = require("cheerio");
-const botURL = "https://zhycorp.xyz/bot";
+const botURL = "https://zhycorp.com/bot";
 async function getOwner(id) {
     const { text } = await superagent_1.get(`${botURL}/${id}`);
     const $ = cheerio_1.load(text);

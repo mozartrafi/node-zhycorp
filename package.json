@@ -1,6 +1,6 @@
 {
   "name": "node-zhycorp",
-  "version": "1.0.0",
+  "version": "1.5.5",
   "description": "A simple API wrapper for Zhycorp Nation Bot List, and written in TypeScript",
   "repository": {
     "type": "git",
@@ -11,9 +11,9 @@
   },
   "homepage": "https://github.com/zhycorp/node-zhycorp#readme",
   "keywords": [
+    "zhycorp",
     "api",
-    "wrapper",
-    "zhycorp"
+    "wrapper"
   ],
   "author": "Zhycorp",
   "license": "AGPL-3.0",
@@ -32,19 +32,19 @@
         "./tsconfig.json"
       ]
     },
-    "extends": "@hazmi35/eslint-config/typescript"
+    "extends": "@zhycorp/eslint-config/typescript"
   },
   "dependencies": {
     "cheerio": "^1.0.0-rc.3",
     "superagent": "^6.1.0"
   },
   "devDependencies": {
-    "@hazmi35/eslint-config": "^1.6.1",
     "@types/cheerio": "^0.22.21",
     "@types/node": "^14.6.4",
     "@types/superagent": "^4.1.10",
     "@typescript-eslint/eslint-plugin": "^4.0.1",
     "@typescript-eslint/parser": "^4.0.1",
+    "@zhycorp/eslint-config": "^2.5.0",
     "eslint": "^7.8.1",
     "rimraf": "^3.0.2",
     "standard-version": "^9.0.0",
